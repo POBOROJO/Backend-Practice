@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logout Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #9d9d9d;
+      }
+
+      .container {
+        width: 300px;
+        background: rgba(205, 142, 220, 0.15);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      .container h2 {
+        text-align: center;
+        color: #fff;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #fff;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background: rgb(43, 140, 220);
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      button:hover {
+        background: rgba(255, 255, 255, 0.4);
+      }
+
+      @media (max-width: 500px) {
+        .container {
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Logout</h2>
+      <form action="/logout" method="post">
+        <button type="submit">Logout</button>
+      </form>
+    </div>
+  </body>
+</html>
